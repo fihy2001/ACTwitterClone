@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D39945"
+    tools:context=".SendTweet"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/edtSendTweet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="Send a Tweet"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btnSendTweet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="24dp"
+        android:text="SEND TWEET"
+        app:layout_constraintTop_toBottomOf="@+id/edtSendTweet" />
+
+    <Button
+        android:id="@+id/btnViewTweets"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="7dp"
+        android:background="#EF5050"
+        android:text="VIEW OTHER USER'S TWEETS"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@+id/btnSendTweet" />
+
+    <ListView
+        android:id="@+id/viewTweetsListView"
+        android:layout_width="390dp"
+        android:layout_height="380dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp" />
+</androidx.appcompat.widget.LinearLayoutCompat>
